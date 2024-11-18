@@ -1,24 +1,24 @@
 [Read the full article on Hashnode] (https://roel244.hashnode.dev/activity-33-solid-principles)
-#Activity 38: SOLID PRINCIPLES
+# Activity 38: SOLID PRINCIPLES
 
 
 The SOLID principles are a set of design principles aimed at improving software maintainability, readability, and scalability. These principles are particularly useful when designing object-oriented systems and are key to writing clean, modular code. In this article, we’ll explore each of the SOLID principles and demonstrate how they can be applied in a Python Flask application.
 
-What are the SOLID Principles?
+# What are the SOLID Principles?
 
-The SOLID principles are:
+# The SOLID principles are:
 
-Single Responsibility Principle (SRP)
+# Single Responsibility Principle (SRP)
 
-Open/Closed Principle (OCP)
+# Open/Closed Principle (OCP)
 
-Liskov Substitution Principle (LSP)
+# Liskov Substitution Principle (LSP)
 
-Interface Segregation Principle (ISP)
+# Interface Segregation Principle (ISP)
 
 Dependency Inversion Principle (DIP)
 
-1. Single Responsibility Principle (SRP)
+# 1. Single Responsibility Principle (SRP)
 
 Definition: A class should have only one reason to change, meaning it should have only one job or responsibility.
 
@@ -62,7 +62,7 @@ def get_user():
 
 Real-World Use Case: In a real-world application, separating concerns ensures that your code is modular, and any change in the user-related logic does not affect the response handling.
 
-2. Open/Closed Principle (OCP)
+# 2. Open/Closed Principle (OCP)
 
 Definition: Software entities (classes, modules, functions) should be open for extension but closed for modification.
 
@@ -101,7 +101,7 @@ def get_admin():
 
 Real-World Use Case: When a new user type or behavior needs to be introduced, you can create new classes that extend existing ones without changing the original classes.
 
-3. Liskov Substitution Principle (LSP)
+# 3. Liskov Substitution Principle (LSP)
 
 Definition: Objects of a subclass should be able to replace objects of the superclass without affecting the correctness of the program.
 
@@ -131,7 +131,7 @@ class AdminService(UserService):
 
 Real-World Use Case: When creating subclasses, ensure they behave consistently with the parent class, so the rest of your system doesn’t break when you substitute one class for another.
 
-4. Interface Segregation Principle (ISP)
+# 4. Interface Segregation Principle (ISP)
 
 Definition: Clients should not be forced to depend on interfaces they do not use.
 
@@ -180,7 +180,7 @@ def get_user_profile():
 
 Real-World Use Case: Breaking down large interfaces into smaller, more focused services makes the code easier to maintain and more flexible.
 
-5. Dependency Inversion Principle (DIP)
+# 5. Dependency Inversion Principle (DIP)
 
 Definition: High-level modules should not depend on low-level modules. Both should depend on abstractions. Abstractions should not depend on details. Details should depend on abstractions.
 
@@ -221,6 +221,6 @@ def get_user():
 
 Real-World Use Case: By depending on abstractions (like interfaces or abstract base classes), we can easily swap out different database implementations (MySQL, MongoDB, etc.) without changing the business logic.
 
-Conclusion
+# Conclusion
 
 By adhering to the SOLID principles, you can design Python Flask applications that are easier to maintain, extend, and test. The principles help reduce code duplication, increase modularity, and promote reusable components, leading to cleaner and more efficient software.
